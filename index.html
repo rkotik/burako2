@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no,initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images/burako.png">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Burako</title>
+</head>
+
+<body>
+  <div class="container py-2">
+    <h3 class="titulo principal bg-success text-white">Puntuación Burako</h3>
+    <nav class="menu">
+      <a href="#" class="btn btn-warning btn-sm" id="btnCargar">Cargar datos</a>
+      <a href="#" class="btn btn-warning btn-sm" id="btnBorrar">Borrar datos</a>
+    </nav>
+    <p id="error" class="hide error"></p>
+    <form>
+      <div>
+        <div class="titulo bg-info text-white text-white my-2">Nosotros</div>
+        <input type="number" id="base-nosotros" placeholder="Base nosotros" class="form-control my-2">
+        <input type="number" id="puntos-nosotros" placeholder="Puntaje nosotros" class="form-control my-2">
+      </div>
+      <div>
+        <div class="titulo bg-info text-white text-white my-2">
+          Ellos
+        </div>
+        <input type="number" id="base-ellos" placeholder="Base ellos" class="form-control my-2">
+        <input type="number" id="puntos-ellos" placeholder="Puntaje ellos" class="form-control my-2">
+      </div>
+      <button id="btnSumar" class="btn btn-success btn-block my-2" type="button">Agregar</button>
+    </form>
+  </div>
+  <div class="container py-2">
+    <table class="table table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th>Mano</th>
+          <th>Nosotros</th>
+          <th>Ellos</th>
+        </tr>
+      </thead>
+      <tbody id="tabla"></tbody>
+      <div id="totales">
+        Total Nosotros: <span id="tn"></span><br>
+        Total Ellos: <span id="te"></span>
+      </div>
+    </table>
+    <div class="copy">Copyright &copy; Ricardo Kotik | Versión 2</div>
+  </div>
+
+
+  <script src="js/app2.js"></script>
+</body>
+
+</html>
