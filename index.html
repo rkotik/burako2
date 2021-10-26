@@ -18,22 +18,26 @@
   <div class="container py-2">
     <h3 class="titulo principal bg-success text-white">Puntuación Burako</h3>
     <nav class="menu">
-      <a href="#" class="btn btn-warning btn-sm" id="btnCargar">Cargar datos</a>
-      <a href="#" class="btn btn-warning btn-sm" id="btnBorrar">Borrar datos</a>
+      <!-- <a href="#" class="btn btn-warning btn-sm" id="btnCargar">Cargar datos</a> -->
+      <a href="#" class="btn btn-warning btn-sm w-100" id="btnBorrar">Borrar datos</a>
     </nav>
     <p id="error" class="hide error"></p>
     <form>
       <div>
         <div class="titulo bg-info text-white text-white my-2">Nosotros</div>
-        <input type="number" id="base-nosotros" placeholder="Base nosotros" class="form-control my-2">
-        <input type="number" id="puntos-nosotros" placeholder="Puntaje nosotros" class="form-control my-2">
+        <div class="row px-3 justify-content-between">
+          <input type="number" id="base-nosotros" placeholder="Base nosotros" class="form-control my-2 col-5">
+          <input type="number" id="puntos-nosotros" placeholder="Puntaje nosotros" class="form-control my-2 col-5">
+        </div>
       </div>
       <div>
         <div class="titulo bg-info text-white text-white my-2">
           Ellos
         </div>
-        <input type="number" id="base-ellos" placeholder="Base ellos" class="form-control my-2">
-        <input type="number" id="puntos-ellos" placeholder="Puntaje ellos" class="form-control my-2">
+        <div class="row px-3 justify-content-between">
+          <input type="number" id="base-ellos" placeholder="Base ellos" class="form-control my-2 col-5">
+          <input type="number" id="puntos-ellos" placeholder="Puntaje ellos" class="form-control my-2 col-5">
+        </div>
       </div>
       <button id="btnSumar" class="btn btn-success btn-block my-2" type="button">Agregar</button>
     </form>

@@ -7,6 +7,10 @@
   outline: none;
 }
 
+html {
+  font-size: 14px;
+}
+
 body {
   background: #eaeded;
   font-family: "Roboto", sans-serif;
@@ -20,6 +24,8 @@ body {
 a {
   text-decoration: none;
 }
+
+input[type=number] {}
 
 .container {
   margin-left: auto;
