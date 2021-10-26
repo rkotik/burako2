@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -12,12 +12,9 @@ html {
 }
 
 body {
-  background: #eaeded;
-  font-family: "Roboto", sans-serif;
-  background-image: url(../images/burako.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  /* background: #eaeded; */
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   padding-top: 15px;
 }
 
@@ -25,16 +22,15 @@ a {
   text-decoration: none;
 }
 
-input[type=number] {}
-
-.container {
+.container-total {
+  background: linear-gradient(to right bottom, #ffffff, #cccccc);
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
   width: 90%;
   max-width: 400px;
-  background: #fff;
+  border-radius: 1rem;
 }
 
 .titulo {
@@ -44,7 +40,7 @@ input[type=number] {}
 }
 
 .principal {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
 }
 
@@ -57,13 +53,12 @@ nav.menu {
   font-weight: bold;
   text-align: center;
   font-size: 0.6em;
-  border-top: 1px solid #ddd;
-  margin-top: 5.75em;
   padding-top: 0.5em;
+
 }
 
 #totales {
-  background-color: #343a40;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   color: #fff;
   padding: .75em;
   margin: .75em 0;
@@ -104,8 +99,25 @@ nav.menu {
 .btn-warning,
 .btn-warning:focus,
 .btn-warning:hover {
-  background-color: #b9ffc3 !important;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
   box-shadow: none !important;
   outline: none !important;
   border-color: transparent !important;
+  color: #fff;
+}
+
+hr {
+  margin-top: 1rem;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  height: 2px;
+  margin-bottom: 0;
+}
+
+.table .thead-dark th {
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb) !important;
+  border-color: transparent;
+}
+
+input[type=number] {
+  font-size: 0.85em;
 }
